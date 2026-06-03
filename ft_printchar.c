@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printchar.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsurilla <bsurilla@student.42vienna.c      +#+  +:+       +#+        */
+/*   By: bsurilla <bsurilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 19:42:00 by bsurilla          #+#    #+#             */
-/*   Updated: 2026/06/02 19:57:36 by bsurilla         ###   ########.fr       */
+/*   Updated: 2026/06/03 23:00:34 by bsurilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
+f(HEX_LOWER)
+
 void	ft_putstr(char *str)
 {
 	while (*str)
@@ -26,4 +28,14 @@ void	ft_putstr(char *str)
 	}
 }
 
+size_t	ft_strlen(const char *s)
+{
+	int	i;
 
+	i = 0;
+	while (*s)
+	{
+		i++;
+	}
+	return (i);
+}

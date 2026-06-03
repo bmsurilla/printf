@@ -3,18 +3,19 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: bsurilla <bsurilla@student.42vienna.c      +#+  +:+       +#+         #
+#    By: bsurilla <bsurilla@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/02 17:42:55 by bsurilla          #+#    #+#              #
-#    Updated: 2026/06/02 17:42:58 by bsurilla         ###   ########.fr        #
+#    Updated: 2026/06/03 21:07:58 by bsurilla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-SRC = ft_.c \
-	 
-
+SRC = 	ft_printf.c \
+		ft_printbase.c \
+		ft_printchar.c \
+		
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
