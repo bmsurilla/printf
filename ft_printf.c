@@ -1,30 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/01 00:31:22 by bsurilla          #+#    #+#             */
-/*   Updated: 2026/06/05 01:32:03 by bea_s            ###   ########.fr       */
+/*   Created: 2026/06/05 01:21:06 by bea_s             #+#    #+#             */
+/*   Updated: 2026/06/05 01:36:49 by bea_s            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# ifndef HEX_LOWER
-#  define HEX_LOWER "0123456789abcdef"
-# endif
+int		ft_printf(const char *str, ...)
+{
+	va_list	args;
+	int		i;
 
-# include <unistd.h>
-
-int		ft_printf(const char *str, ...);
-void	ft_putchar(char c);
-void	ft_putstr(char *str);
-size_t	ft_strlen(const char *str);
-size_t	ft_intlen(long long n);
-void	ft_putnbr(int n);
-void    ft_hexconvert(int n);
-
-#endif
+	va_start ()
+}
