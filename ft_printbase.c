@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printbase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsurilla <bsurilla@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 19:38:01 by bsurilla          #+#    #+#             */
-/*   Updated: 2026/06/03 23:10:15 by bsurilla         ###   ########.fr       */
+/*   Updated: 2026/06/06 07:49:54 by bea_s            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-size_t	ft_intlen(long long n)
+/* size_t	ft_intlen(long long n)
 {
 	int	i;
 
@@ -25,23 +25,29 @@ size_t	ft_intlen(long long n)
 		i++;
 	}
 	return (i);
-}
+} */
 
-void	ft_putnbr(int n)
+size_t	ft_putnbr(int n)
 {
 	long long	nb;
 	char		digit;
+	int			i;
 
 	nb = n;
 	if (nb < 0)
 	{
 		write(1, "-", 1);
 		nb = nb *(-1);
+		i++;
 	}
 	if (nb >= 10)
-		ft_putnbr(nb / 10);
+	{	
+	ft_putnbr(nb / 10);
+	i++;
+	}	
 	digit = nb % 10 + '0';
 	write(1, &digit, ft_intlen(nb));
+	return (i);
 }
 
 void    ft_hexconvert(int n)

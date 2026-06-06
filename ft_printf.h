@@ -6,7 +6,7 @@
 /*   By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 00:31:22 by bsurilla          #+#    #+#             */
-/*   Updated: 2026/06/05 01:32:03 by bea_s            ###   ########.fr       */
+/*   Updated: 2026/06/06 08:12:33 by bea_s            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@
 # include <unistd.h>
 
 int		ft_printf(const char *str, ...);
-void	ft_putchar(char c);
-void	ft_putstr(char *str);
-size_t	ft_strlen(const char *str);
-size_t	ft_intlen(long long n);
-void	ft_putnbr(int n);
+int 	ft_putchar(char c);
+int	ft_putstr(char *str);
+// size_t	ft_strlen(const char *str);
+// size_t	ft_intlen(long long n);
+size_t	ft_putnbr(int n);
 void    ft_hexconvert(int n);
 
 #endif
