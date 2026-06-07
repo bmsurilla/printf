@@ -6,7 +6,7 @@
 /*   By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 19:38:01 by bsurilla          #+#    #+#             */
-/*   Updated: 2026/06/06 07:49:54 by bea_s            ###   ########.fr       */
+/*   Updated: 2026/06/07 10:27:08 by bea_s            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,14 @@
 	return (i);
 } */
 
-size_t	ft_putnbr(int n)
+int	ft_putnbr(int n)
 {
 	long long	nb;
 	char		digit;
 	int			i;
 
 	nb = n;
+	i = 0;
 	if (nb < 0)
 	{
 		write(1, "-", 1);
@@ -42,24 +43,32 @@ size_t	ft_putnbr(int n)
 	}
 	if (nb >= 10)
 	{	
-	ft_putnbr(nb / 10);
-	i++;
-	}	
+		i = i + ft_putnbr(nb / 10);
+	}	 
 	digit = nb % 10 + '0';
-	write(1, &digit, ft_intlen(nb));
+	write(1, &digit, 1);
+	i++;
 	return (i);
 }
 
-void    ft_hexconvert(int n)
+/* void    ft_hexconvert(int n)
 {
     long long    nb;
     char        *hexbase;
     
     nb = n;
-    hexbase = "0123456789abcdef";
+    hexbase = HEX_LOWER;
     {
         if(nb >= 16)
             ft_hexconvert(nb / 16);
         write(1, hexbase[nb % 16], 1);
     }
+} */
+
+#include <stdio.h>
+int	main (void)
+{
+	int	n;
+	n = -450202;
+	printf(" is your number!\n it has %d digits.\n", ft_putnbr(n));	
 }
