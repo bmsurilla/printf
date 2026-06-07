@@ -6,7 +6,7 @@
 /*   By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 19:38:01 by bsurilla          #+#    #+#             */
-/*   Updated: 2026/06/07 10:27:08 by bea_s            ###   ########.fr       */
+/*   Updated: 2026/06/07 22:45:56 by bea_s            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int	ft_putnbr(int n)
 	return (i);
 }
 
-/* void    ft_hexconvert(int n)
+void    ft_hexconvert(int n)
 {
     long long    nb;
     char        *hexbase;
@@ -63,12 +63,12 @@ int	ft_putnbr(int n)
             ft_hexconvert(nb / 16);
         write(1, hexbase[nb % 16], 1);
     }
-} */
+} 
 
 #include <stdio.h>
 int	main (void)
 {
 	int	n;
-	n = -450202;
+	n = -123456;
 	printf(" is your number!\n it has %d digits.\n", ft_putnbr(n));	
 }
