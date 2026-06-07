@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: bsurilla <bsurilla@student.42.fr>          +#+  +:+       +#+         #
+#    By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/02 17:42:55 by bsurilla          #+#    #+#              #
-#    Updated: 2026/06/03 21:07:58 by bsurilla         ###   ########.fr        #
+#    Updated: 2026/06/08 00:37:55 by bea_s            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libftprintf.a
 
 SRC = 	ft_printf.c \
 		ft_printbase.c \
-		ft_printchar.c \
+		ft_print_helpers.c \
 		
 OBJ = $(SRC:.c=.o)
 
