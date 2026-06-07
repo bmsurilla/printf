@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printchar.c                                     :+:      :+:    :+:   */
+/*   ft_print_helpers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/02 19:42:00 by bsurilla          #+#    #+#             */
-/*   Updated: 2026/06/08 00:36:38 by bea_s            ###   ########.fr       */
+/*   Created: 2026/06/08 00:41:19 by bsurilla          #+#    #+#             */
+/*   Updated: 2026/06/08 00:45:13 by bea_s            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ int	ft_putnbr_u(unsigned int n)
 	return (i);
 }
 
- int	ft_putnbr_hex(unsigned int n, char *hex)
+int	ft_putnbr_hex(unsigned int n, char *hex)
 {
 	char		digit;
 	int			i;

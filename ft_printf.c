@@ -6,16 +6,8 @@
 /*   By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 01:21:06 by bea_s             #+#    #+#             */
-/*   Updated: 2026/06/05 01:36:49 by bea_s            ###   ########.fr       */
+/*   Updated: 2026/06/08 00:40:20 by bea_s            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-int		ft_printf(const char *str, ...)
-{
-	va_list	args;
-	int		i;
-
-	va_start ()
-}
