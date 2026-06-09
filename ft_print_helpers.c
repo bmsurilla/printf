@@ -6,7 +6,7 @@
 /*   By: bsurilla <bsurilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 00:41:19 by bsurilla          #+#    #+#             */
-/*   Updated: 2026/06/08 20:40:01 by bsurilla         ###   ########.fr       */
+/*   Updated: 2026/06/09 21:16:55 by bsurilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,6 @@ int	ft_putchar(char c)
 {
 	write(1, &c, 1);
 	return (1);
-}
-
-int	ft_putstr(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
-	return (i);
 }
 
 int	ft_putnbr(int n)
@@ -85,6 +72,22 @@ int	ft_putnbr_hex(unsigned long n, char *hex)
 	write(1, &digit, 1);
 	i++;
 	return (i);
+}
+
+int	ft_putptr(void *ptr)
+{
+	unsigned long	n;
+	int 			hex;
+	
+	if(!ptr)
+	{
+		write (1, "(nil)", 5);
+		return (5);
+	}
+	n = (unsigned long)ptr;
+	write(1, "0x", 2);
+	hex = ft_putnbr_hex(n, HEX_LOWER);
+	return (hex + 2);
 }
 /* 
  #include <stdio.h>
