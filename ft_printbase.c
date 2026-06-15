@@ -6,11 +6,11 @@
 /*   By: bsurilla <bsurilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 19:38:01 by bsurilla          #+#    #+#             */
-/*   Updated: 2026/06/09 20:53:42 by bsurilla         ###   ########.fr       */
+/*   Updated: 2026/06/15 17:54:41 by bsurilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+/* #include "ft_printf.h"
 
 
 
@@ -25,5 +25,5 @@ int	main (void)
 	
 	result = printf("%p", ptr);
 	printf(" it has %d digits.\n", result);
-} 
+}  */
  
