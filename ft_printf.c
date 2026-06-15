@@ -6,11 +6,12 @@
 /*   By: bsurilla <bsurilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 01:21:06 by bea_s             #+#    #+#             */
-/*   Updated: 2026/06/15 17:54:58 by bsurilla         ###   ########.fr       */
+/*   Updated: 2026/06/15 20:58:09 by bsurilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <stdarg.h>
 
 int	ft_putstr(char *str)
 {
@@ -25,12 +26,9 @@ int	ft_putstr(char *str)
 	return (i);
 }
 
-int		ft_printf(const char *str, ...)
+int		ft_format(const char *str, va_list format, int i)
 {
-	va_list	args;
-	int		i;
-	
-	va_start (args, str);
+	va_start (format, str);
 	i = 0;
 	
 	while(str[i])
@@ -41,9 +39,11 @@ int		ft_printf(const char *str, ...)
 			if (str[i] == "c")
 			{
 				i++;
-				ft_putchar(str[i]);
-				return (i + ft_putchar(*str));
+				ft_putchar(va_arg(format, char c));
+				// return (i + ft_putchar(*str));
 			}
+			
+			
 			else if (str[i] == "p")
 			{
 				i++;
