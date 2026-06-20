@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsurilla <bsurilla@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 00:31:22 by bsurilla          #+#    #+#             */
-/*   Updated: 2026/06/08 20:59:44 by bsurilla         ###   ########.fr       */
+/*   Updated: 2026/06/20 16:00:29 by bea_s            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,10 @@
 # endif
 
 # include <unistd.h>
+# include <stdarg.h>
 
 int		ft_printf(const char *str, ...);
+int		ft_format(char formatter, va_list format);
 int		ft_putchar(char c);
 int		ft_putstr(char *str);
 int		ft_putnbr(int n);

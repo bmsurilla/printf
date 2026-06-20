@@ -6,14 +6,13 @@
 #    By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/02 17:42:55 by bsurilla          #+#    #+#              #
-#    Updated: 2026/06/08 00:37:55 by bea_s            ###   ########.fr        #
+#    Updated: 2026/06/20 15:58:55 by bea_s            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
 SRC = 	ft_printf.c \
-		ft_printbase.c \
 		ft_print_helpers.c \
 		
 OBJ = $(SRC:.c=.o)
