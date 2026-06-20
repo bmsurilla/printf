@@ -6,7 +6,7 @@
 /*   By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 01:21:06 by bea_s             #+#    #+#             */
-/*   Updated: 2026/06/17 01:28:39 by bea_s            ###   ########.fr       */
+/*   Updated: 2026/06/20 14:35:25 by bea_s            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,14 +55,16 @@ int		ft_printf(const char *str, ...)
 {
 	va_start	(format, *str);
 	int			i;
+	int			count;
 	
 	i = 0;
+	count = 0;
 	while (str[i])
 	{
 		if (str[i] = "%")
 		{
 			i++;
-			ft_format(str[i], format);
+			count = count + ft_format(str[i], format);
 		}
 		else
 			ft_putstr(*str);
