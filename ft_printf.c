@@ -6,7 +6,7 @@
 /*   By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 01:21:06 by bea_s             #+#    #+#             */
-/*   Updated: 2026/06/22 20:22:29 by bea_s            ###   ########.fr       */
+/*   Updated: 2026/06/22 20:32:30 by bea_s            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,8 +100,8 @@ printf("A%dB \n", 42);
 printf("%s %d \n", "Bea", 42);
 printf("%% \n");
 printf("%c\n", 'B');
-} */
-
+}
+ */
 /* #include <stdio.h>
 int	main (void)
 {
@@ -135,12 +135,12 @@ int main (void)
 printf(" %p %p ", LONG_MIN, LONG_MAX);
 printf(" %p %p ", ULONG_MAX, -ULONG_MAX);
 printf("\n");
-ft_printf(" %p %p ", LONG_MIN, LONG_MAX);
-ft_printf(" %p %p ", ULONG_MAX, -ULONG_MAX);
-printf("\n");
-printf("%p\n", NULL);
-ft_printf("%p\n", NULL);
-printf("\n");
-printf("%p\n", LONG_MAX);
-printf("%p\n", (void *)LONG_MAX);
+// ft_printf(" %p %p ", LONG_MIN, LONG_MAX);
+// ft_printf(" %p %p ", ULONG_MAX, -ULONG_MAX);
+// printf("\n");
+// printf("%p\n", NULL);
+// ft_printf("%p\n", NULL);
+// printf("\n");
+// printf("%p\n", LONG_MAX);
+// printf("%p\n", (void *)LONG_MAX);
 } */

@@ -6,7 +6,7 @@
 /*   By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 00:41:19 by bsurilla          #+#    #+#             */
-/*   Updated: 2026/06/22 20:20:38 by bea_s            ###   ########.fr       */
+/*   Updated: 2026/06/22 20:25:12 by bea_s            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,10 +85,8 @@ int	ft_putptr(void *ptr)
 		return (5);
 	}
 	n = (unsigned long long)ptr;
-	printf("DEBUG n = %lx\n", n);
 	write(1, "0x", 2);
 	hex = ft_putnbr_hex(n, HEX_LOWER);
-	printf("\nDEBUG hex count = %d\n", hex);
 	return (hex + 2);
 }
 /* 
@@ -110,20 +108,20 @@ int	ft_putptr(void *ptr)
 	printf(" is your number!\n it has %d digits.\n", ft_putnbr_u(u));
 	printf(" is your number!\n it has %d digits.\n", ft_putnbr_hex(u,hexbase));	
 } */
-
+/* 
 #include <stdio.h>
 #include <limits.h>
 int main (void)
 {
 printf(" %p %p ", LONG_MIN, LONG_MAX);
-// printf(" %p %p ", ULONG_MAX, -ULONG_MAX);
-// printf("\n");
+printf(" %p %p ", ULONG_MAX, -ULONG_MAX);
+printf("\n");
 ft_printf(" %p %p ", LONG_MIN, LONG_MAX);
-// ft_printf(" %p %p ", ULONG_MAX, -ULONG_MAX);
-// printf("\n");
-// printf("%p\n", NULL);
-// ft_printf("%p\n", NULL);
-// printf("\n");
-// printf("%p\n", LONG_MAX);
-// printf("%p\n", (void *)LONG_MAX);
-}
+ft_printf(" %p %p ", ULONG_MAX, -ULONG_MAX);
+printf("\n");
+printf("%p\n", NULL);
+ft_printf("%p\n", NULL);
+printf("\n");
+printf("%p\n", LONG_MAX);
+printf("%p\n", (void *)LONG_MAX);
+} */
