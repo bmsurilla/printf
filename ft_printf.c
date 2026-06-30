@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bea_s <bea_s@student.42.fr>                +#+  +:+       +#+        */
+/*   By: bsurilla <bsurilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 01:21:06 by bea_s             #+#    #+#             */
-/*   Updated: 2026/06/22 20:32:30 by bea_s            ###   ########.fr       */
+/*   Updated: 2026/06/30 14:18:56 by bsurilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@ int	ft_putstr(char *str)
 	if (!str)
 	{
 		write (1, "(null)", 6);
-		return(6);
+		return (6);
 	}
 	while (str[i])
 	{
-			write (1, &str[i], 1);
-			i++;
+		write (1, &str[i], 1);
+		i++;
 	}
 	return (i);
 }
@@ -126,7 +126,6 @@ LONG_MIN, ULONG_MAX, 0, -42);
 	printf(" %X %X %X %X %X %X %X \n", INT_MAX, INT_MIN, LONG_MAX, 
 LONG_MIN, ULONG_MAX, 0, -42);
 } */
-
 
 /* #include <stdio.h>
 #include <limits.h>
